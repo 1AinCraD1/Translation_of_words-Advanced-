@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<TITLE> LR 12 </TITLE>
+<link rel="stylesheet" href="style/style.css">
+<link rel="shortcut icon" href="pictures/space.jpg">
+<script src="jquery_min.js"></script>
+<script src="js/script.js" defer></script>
+</HEAD>
+<BODY>
+<div class="main">
+	<h2>Контроль вивчення іноземної мови</h2>
+	<div class="level">
+		<label><input type="radio" name="language" value="elementary">Початковий</label>
+		<label><input type="radio" name="language" value="intermediate">Середній</label>
+		<label><input type="radio" name="language" value="advanced">Високий</label>
+	</div>
+		<div id="card">
+			<div id="word"></div>
+		</div>
+		<div class="statistic">
+			<div class="navigation">
+				<button onclick="navigate(-1)">←</button>
+			</div>
+			<div id="progress"></div>
+			<div class="navigation">
+				<button onclick="navigate(1)">→</button>
+			</div>
+		</div>
+		<input type="text" id="translation" placeholder="Введіть переклад">
+		<div class="count">
+			<div id="correctCount">Вірно: 0</div>
+			<div id="incorrectCount">Невірно: 0</div>
+		</div>
+</div>
+</BODY>
+</HTML>
